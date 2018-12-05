@@ -12,6 +12,12 @@ h1 {
   text-align: center;
 }
 
+.load-more {
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 360px) {
   body {
     padding: 10px;

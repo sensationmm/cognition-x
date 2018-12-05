@@ -6,9 +6,19 @@ import store, { history } from './store';
 import App from './containers/App';
 
 import { checkBreakPoint } from './actions/ui';
+import { getStoriesList, loadMoreStories } from './actions/stories';
 
 //Detect resize
 window.addEventListener('resize', () => store.dispatch(checkBreakPoint()) );
+
+//Lazy loading
+// window.addEventListener('scroll', () => {
+//   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+//     store.dispatch(loadMoreStories()) ;
+//   }
+// });
+
+store.dispatch(getStoriesList());
 
 render(
   <Provider store={store}>
