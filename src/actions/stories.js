@@ -62,7 +62,6 @@ export const loadMoreStories = () => async (dispatch) => {
 
   const newStories = [];
   for(let i=numStories; i<numStories+20; i++) {
-    console.log('get new story', i);
     const storyUrl = `https://hacker-news.firebaseio.com/v0/item/${storyList[i]}.json?print=pretty`
 
     await axios.get(storyUrl).then(function(response) {   
