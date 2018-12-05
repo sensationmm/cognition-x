@@ -60,8 +60,7 @@
     "preeslint": "echo 'Running eslint'",
     "eslint": "eslint src",
     "presasslint": "echo 'Running sasslint'",
-    "sasslint": "sass-lint -c .sass-lint.yml 'src/styles/sass/*.scss' -v --no-exit",
-    "test": "jest --watch --verbose"
+    "sasslint": "sass-lint -c .sass-lint.yml 'src/styles/sass/*.scss' -v --no-exit"
   },
   "lint-staged": {
     "*.{js,json,css,md}": [
