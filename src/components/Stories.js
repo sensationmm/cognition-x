@@ -3,7 +3,7 @@ import React from 'react';
 import Story from './Story';
 
 const Stories = (props) => {
-  const { stories, loadMore } = props;
+  const { stories } = props;
 
 	return (
 		<div className="">

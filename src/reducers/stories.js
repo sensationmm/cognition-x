@@ -1,7 +1,6 @@
 import {
   GET_STORIES_SUCCESS,
-  GET_STORIES_UPDATE_SUCCESS,
-  GET_STORY_SUCCESS
+  GET_STORIES_UPDATE_SUCCESS
 } from '../config/constants';
 
 const initialState = {
